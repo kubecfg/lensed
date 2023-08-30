@@ -25,3 +25,12 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+brews:
+  - name: lensed
+    homepage: "https://github.com/kubecfg/lensed"
+    tap:
+      owner: kubecfg
+      name: homebrew-lensed
+    commit_author:
+      name: Marko Mikulicic
+      email: mmikulicic@gmail.com
