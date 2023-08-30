@@ -10,6 +10,9 @@ import (
 	"knot8.io/pkg/lensed"
 )
 
+// set by goreleaser
+var version = "(devel)"
+
 // Context is a CLI context.
 type Context struct {
 	*CLI
@@ -101,13 +104,14 @@ func (s *Setter) UnmarshalText(in []byte) error {
 	return nil
 }
 
-func version() string {
+func getVersion() string {
 	if bi, ok := debug.ReadBuildInfo(); ok {
 		if v := bi.Main.Version; v != "" && v != "(devel)" {
 			return v
 		}
 	}
-	return "(devel)"
+	// otherwise fallback to the version set by goreleaser
+	return version
 }
 
 func main() {
@@ -115,7 +119,7 @@ func main() {
 	ctx := kong.Parse(&cli,
 		kong.UsageOnError(),
 		kong.Vars{
-			"version": version(),
+			"version": getVersion(),
 		},
 		kong.ConfigureHelp(kong.HelpOptions{
 			Compact: true,
