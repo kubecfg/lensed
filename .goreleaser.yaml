@@ -28,7 +28,7 @@ changelog:
 brews:
   - name: lensed
     homepage: "https://github.com/kubecfg/lensed"
-    tap:
+    repository:
       owner: kubecfg
       name: homebrew-lensed
     commit_author:
