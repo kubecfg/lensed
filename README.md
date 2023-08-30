@@ -10,7 +10,9 @@ that in turn is embedded in a string literal of a YAML file.
 
 ### Homebrew
 
-TODO
+```bash
+brew install kubecfg/lensed/lensed
+```
 
 ### From sources
 
