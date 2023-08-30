@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"runtime/debug"
 	"strings"
 
 	"github.com/alecthomas/kong"
@@ -100,12 +101,21 @@ func (s *Setter) UnmarshalText(in []byte) error {
 	return nil
 }
 
+func version() string {
+	if bi, ok := debug.ReadBuildInfo(); ok {
+		if v := bi.Main.Version; v != "" && v != "(devel)" {
+			return v
+		}
+	}
+	return "(devel)"
+}
+
 func main() {
 	var cli CLI
 	ctx := kong.Parse(&cli,
 		kong.UsageOnError(),
 		kong.Vars{
-			"version": "0.0.1",
+			"version": version(),
 		},
 		kong.ConfigureHelp(kong.HelpOptions{
 			Compact: true,
