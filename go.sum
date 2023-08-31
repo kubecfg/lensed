@@ -64,5 +64,7 @@ gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 knot8.io v0.5.2 h1:42SiJq+9BibRM8Q+pB4Af/0UUxBrGguKxImSVb82B6U=
 knot8.io v0.5.2/go.mod h1:1A55GyqmQg1Q0RLG+IiddqScUHxD05SXmttLVyDc7M8=
+knot8.io v0.6.0 h1:gEwRPqtVbMq35F3mLgb4oJkLG9eN8oEFsha1cXHJS5k=
+knot8.io v0.6.0/go.mod h1:mAZE9dBG4tyonn5fG2OqObnvvjZfrjMzxybUYByMr7Y=
 sigs.k8s.io/yaml v1.1.0 h1:4A07+ZFc2wgJwo8YNlQpr1rVlgUDlxXHhPJciaPY5gs=
 sigs.k8s.io/yaml v1.1.0/go.mod h1:UJmg0vDUVViEyp3mgSv9WPwZCDxu4rQW1olrI1uml+o=

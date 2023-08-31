@@ -7,7 +7,7 @@ require (
 	github.com/mattn/go-isatty v0.0.19
 	github.com/mkmik/multierror v0.3.0
 	golang.org/x/text v0.12.0
-	knot8.io v0.5.2
+	knot8.io v0.6.0
 )
 
 require (
