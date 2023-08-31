@@ -181,4 +181,22 @@ $ lensed set "~(jsonnet)/foo/bar=new" <example.yaml
 }
 ```
 
-(support for editing `import` and `importstr` expressions would be very useful but it's not yet implemented)
+It can also edit the urls inside imports:
+
+```console
+$ cat >example.yaml <<EOF
+{
+  foo+: importstr "old.yaml",
+}
+EOF
+$ lensed get "~(jsonnet)/foo/~file" <example.yaml 
+old
+$ lensed set "~(jsonnet)/foo/~file=new.yaml" <example.yaml
+{
+  foo+: importstr "new.yaml",
+}
+```
+
+## Limitations
+
+It can only handle leaf nodes. i.e. you can't replace a yaml subtree with another yaml subtree
