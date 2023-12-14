@@ -5,7 +5,6 @@ go 1.21.5
 require (
 	github.com/alecthomas/kong v0.8.1
 	github.com/mattn/go-isatty v0.0.20
-	github.com/mkmik/multierror v0.3.0
 	golang.org/x/text v0.14.0
 	knot8.io v0.6.0
 )
