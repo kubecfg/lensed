@@ -6,12 +6,12 @@ require (
 	github.com/alecthomas/kong v0.8.1
 	github.com/mattn/go-isatty v0.0.20
 	golang.org/x/text v0.14.0
-	knot8.io v0.6.0
+	knot8.io v0.6.1
 )
 
 require (
-	github.com/go-openapi/jsonpointer v0.19.6 // indirect
-	github.com/go-openapi/swag v0.22.3 // indirect
+	github.com/go-openapi/jsonpointer v0.20.0 // indirect
+	github.com/go-openapi/swag v0.22.4 // indirect
 	github.com/google/go-jsonnet v0.20.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
