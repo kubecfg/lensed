@@ -1,6 +1,6 @@
 module github.com/kubecfg/lensed
 
-go 1.21.7
+go 1.22.0
 
 require (
 	github.com/alecthomas/kong v0.8.1
