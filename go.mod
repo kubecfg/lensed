@@ -3,7 +3,7 @@ module github.com/kubecfg/lensed
 go 1.21.7
 
 require (
-	github.com/alecthomas/kong v0.8.1
+	github.com/alecthomas/kong v1.6.0
 	github.com/mattn/go-isatty v0.0.20
 	golang.org/x/text v0.14.0
 	knot8.io v0.6.1
