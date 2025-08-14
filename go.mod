@@ -5,7 +5,7 @@ go 1.21.7
 require (
 	github.com/alecthomas/kong v1.7.0
 	github.com/mattn/go-isatty v0.0.20
-	golang.org/x/text v0.21.0
+	golang.org/x/text v0.28.0
 	knot8.io v0.6.1
 )
 
