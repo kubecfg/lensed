@@ -1,11 +1,11 @@
 module github.com/kubecfg/lensed
 
-go 1.21.7
+go 1.25.0
 
 require (
 	github.com/alecthomas/kong v1.12.1
 	github.com/mattn/go-isatty v0.0.24
-	golang.org/x/text v0.21.0
+	golang.org/x/text v0.41.0
 	knot8.io v0.6.1
 )
 
